@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        tools:context=".auth.SignInFragment">
+
+        <ImageView
+            android:id="@+id/ivLogin"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sbp1" />
+
+        <LinearLayout
+            android:background="@color/light_orange"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_65sdp">
+
+            <TextView
+                android:id="@+id/tvSambalpuri"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sambalpuri"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cart"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Login or Sign Up"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+            app:boxCornerRadiusTopStart="@dimen/_15sdp"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_phone"
+                android:hint="Enter mobile number"
+                android:id="@+id/et_phone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:background="@drawable/btn_bg_layout"
+            android:gravity="center"
+            android:id="@+id/btn_continue"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:text="Continue"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/grey"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
